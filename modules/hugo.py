@@ -1,4 +1,4 @@
-"""Module name
+"""Main module for 1,2,3 exercises
 
 Copyright (c) 2021 Hugo Monnerie
 All Rights Reserved.
@@ -6,13 +6,20 @@ Released under the MIT license
 
 """
 
+
 def strToList(str):
-    print(f'exo1: {list(str.strip())}')
+    return list(str.strip())
 
 
-def strToASCII(str):
-    print(f'exo2: {[ord(c) for c in str]}')
+def toASCII(array):
+    result = []
+    for letter in array:
+        result.append(ord(letter))
+    return result
 
 
-def strToBinary(str):
-    print(f'exo3: ' + ' '.join(format(ord(i), '08b') for i in str))
+def toBinary(array):
+    result = []
+    for number in array:
+        result.append(bin(int(number)).replace("0b", ""))
+    return result

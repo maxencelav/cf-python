@@ -7,7 +7,7 @@ Released under the MIT license
 """
 
 
-def array_right_pad(array, length):
+def array_right_pad(array, length=6):
     paddedArray = []
     for string in array:
         paddedArray.append(string.ljust(length, '0'))
@@ -19,7 +19,7 @@ def array_bin_to_int(array):
     intArray = []
 
     for string in array:
-        intArray.append(int(string,2))
+        intArray.append(int(string, 2))
         # converts the binary string as a decimal number
         # (the two is there to specify the original string is in binary)
 
