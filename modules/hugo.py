@@ -6,19 +6,20 @@ Released under the MIT license
 
 """
 
+
 def strToList(str):
     return list(str.strip())
 
 
-def toASCII(str):
+def toASCII(array):
     result = []
-    for s in str:
-        result.append(ord(c) for c in s)
+    for letter in array:
+        result.append(ord(letter))
     return result
 
 
-def toBinary(str):
+def toBinary(array):
     result = []
-    for s in str:
-        result.append(format(ord(x), "b") for x in s)
+    for number in array:
+        result.append(bin(int(number)).replace("0b", ""))
     return result
