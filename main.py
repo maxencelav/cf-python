@@ -10,12 +10,18 @@ from modules.hugo import strToList, strToASCII, strToBinary
 
 str = 'ABCDE'
 
+
 def main():
-    strToList(str)
-    strToASCII(str)
-    strToBinary(str)
     val = input("Entrez une chaîne de caractères : ")
     print(val)
+    valList = strToList(val)
+    print(valList)
+
+    valAscii = strToASCII(valList)
+    print(valAscii)
+
+    valBinary = strToBinary(valAscii)
+    print(valBinary)
 
 
 if __name__ == '__main__':
