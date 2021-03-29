@@ -8,6 +8,9 @@ Released under the MIT license
 
 
 def main():
+    val = input("Entrez une chaîne de caractères : ")
+    print(val)
+
     pass
 
 
