@@ -16,9 +16,15 @@ def create_character_chain():
     list_in_string = "".join(array)
     print(list_in_string)
 
+def chain_in_list():
+    string = "0100000101000010010000110100010001000101"
+    string_in_array = [string[i:i+6] for i in range(0, len(string), 6)]
+    print(string_in_array)
+
 def main():
     add_zero()
     create_character_chain()
+    chain_in_list()
 
 
 if __name__ == '__main__':
