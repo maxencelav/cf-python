@@ -6,9 +6,14 @@ Released under the MIT license
 
 """
 
+from modules.hugo import strToList, strToASCII, strToBinary
+
+str = 'ABCDE'
 
 def main():
-    pass
+    strToList(str)
+    strToASCII(str)
+    strToBinary(str)
 
 
 if __name__ == '__main__':
