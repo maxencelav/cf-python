@@ -1,4 +1,4 @@
-"""Module name
+"""Main module for base64 exercise
 
 Copyright (c) 2021 Maxence LAVENU
 All Rights Reserved.
@@ -14,6 +14,8 @@ def main():
     strToList(str)
     strToASCII(str)
     strToBinary(str)
+    val = input("Entrez une chaîne de caractères : ")
+    print(val)
 
 
 if __name__ == '__main__':
