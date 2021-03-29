@@ -6,16 +6,18 @@ Released under the MIT license
 
 """
 
-from modules.hugo import strToList, strToASCII, strToBinary
 from modules.marion import add_zero, create_character_chain, chain_in_list
 from modules.maxence import array_right_pad, array_bin_to_int
+from modules.hugo import strToList, toASCII, toBinary
 
-str = 'ABCDE'
 
 
 def main():
     val = input("Entrez une chaîne de caractères : ")
     print(val)
+    print(strToList(val))
+    print(toASCII(val))
+    print(toBinary(val))
 
     val = strToList(val)
     print(val)
