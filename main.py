@@ -1,4 +1,4 @@
-"""Module name
+"""Main module for base64 exercise
 
 Copyright (c) 2021 Maxence LAVENU
 All Rights Reserved.
