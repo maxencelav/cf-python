@@ -11,7 +11,7 @@ def exercie9(list):
 
 
 def int_to_base64(value):
-    if base64 / value >= len(base64)
+    if base64 / value >= len(base64):
 
 
 def exercie10(list):
